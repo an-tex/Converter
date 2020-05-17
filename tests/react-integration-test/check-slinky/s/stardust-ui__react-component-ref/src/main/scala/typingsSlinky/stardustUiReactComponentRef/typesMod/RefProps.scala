@@ -38,9 +38,9 @@ object RefProps {
     @scala.inline
     def setChildren(value: ReactElement): Self = this.set("children", value.asInstanceOf[js.Any])
     @scala.inline
-    def setInnerRefRefObject(value: ReactRef[_]): Self = this.set("innerRef", value.asInstanceOf[js.Any])
-    @scala.inline
     def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("innerRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInnerRefRefObject(value: ReactRef[_]): Self = this.set("innerRef", value.asInstanceOf[js.Any])
     @scala.inline
     def setInnerRef(value: Ref[_]): Self = this.set("innerRef", value.asInstanceOf[js.Any])
     @scala.inline

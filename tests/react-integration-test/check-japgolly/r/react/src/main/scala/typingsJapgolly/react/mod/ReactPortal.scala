@@ -6,7 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.react.mod.ReactNode because Already inherited */ @js.native
 trait ReactPortal extends ReactElement {
   var children: Node = js.native
 }

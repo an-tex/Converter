@@ -31,9 +31,9 @@ object DOMElement {
         x
     }
     @scala.inline
-    def setRefRefObject(value: ReactRef[T]): Self = this.set("ref", value.asInstanceOf[js.Any])
-    @scala.inline
     def setRefFunction1(value: /* instance */ T | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRefRefObject(value: ReactRef[T]): Self = this.set("ref", value.asInstanceOf[js.Any])
     @scala.inline
     def setRef(value: LegacyRef[T]): Self = this.set("ref", value.asInstanceOf[js.Any])
     @scala.inline

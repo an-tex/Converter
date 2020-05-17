@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "numjs"
-version := "0.0-unknown-e64897"
+version := "0.0-unknown-a58175"
 scalaVersion := "2.13.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

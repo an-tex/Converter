@@ -29,9 +29,9 @@ object ClassAttributes {
         x
     }
     @scala.inline
-    def setRefRefObject(value: RefHandle[T]): Self = this.set("ref", value.asInstanceOf[js.Any])
-    @scala.inline
     def setRefFunction1(value: /* instance */ T | Null => Callback): Self = this.set("ref", js.Any.fromFunction1((t0: /* instance */ T | Null) => value(t0).runNow()))
+    @scala.inline
+    def setRefRefObject(value: RefHandle[T]): Self = this.set("ref", value.asInstanceOf[js.Any])
     @scala.inline
     def setRef(value: LegacyRef[T]): Self = this.set("ref", value.asInstanceOf[js.Any])
     @scala.inline
